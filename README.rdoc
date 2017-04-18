@@ -1,0 +1,45 @@
+== README
+
+Bootstrap tour is js used to give end user option to walk through your website to make it easy to use.
+
+Requirement :-
+
+Bootstrap >= 2.3.0
+
+Jquery
+
+Add bootstrap-tour js in your assets/javascripts folder
+
+Add following in your application.js file
+
+//= require bootstrap-tour
+
+Setup your tour:
+
+var tour = new Tour ({
+        steps: [
+        {
+          element: "#myid1",
+          title: "Test 1",
+          content: "Test content 1",
+          placement: "right"
+        },
+        {
+          element: "#myid2",
+          title: "Test 2",
+          content: "Test Content 2",
+          placement: "right"
+        }],
+        onShown: function (tour) {
+        },
+        onEnd: function (tour) {
+        }
+      });
+
+// Initialize the tour
+  tour.init();
+// Start the tour
+  tour.start();
+
+To get full documentation on various functions and variables please visit http://bootstraptour.com/api/.
+

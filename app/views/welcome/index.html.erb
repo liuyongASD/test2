@@ -1,0 +1,30 @@
+<div>
+  <div class="center-block col-md-6 text-center">
+    <p>This is bootstrap tour Example</p>
+      <%= link_to 'Add a new product', "#", :class => 'btn btn-primary', id: "myid1" %>
+      <%= link_to 'Add a store', "#", :class => 'btn btn-info', id: "myid2" %>
+    </p>
+  </div>
+</div>
+<script>
+  var tour = new Tour ({
+        steps: [
+        {
+          element: "#myid1",
+          title: "Button 1",
+          content: "Click to add product",
+          placement: "bottom"
+       },
+        {
+          element: "#myid2",
+          title: "Button 2",
+          content: "Click to add store",
+          placement: "bottom"
+       }],
+       storage: false
+      });
+// Initialize the tour
+  tour.init();
+// Start the tour
+  tour.start();
+</script>

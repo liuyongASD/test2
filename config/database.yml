@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: bootstrap_example
+  pool: 5
+  username: enbake
+  password: enbake
